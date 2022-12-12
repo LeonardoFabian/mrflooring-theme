@@ -1,0 +1,188 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "appearanceTools": true,
+        "color": {
+            "defaultPalette": false,
+            "palette": [
+                { "slug": "mrflooring-white", "color":  "rgb(255,255,255)", "name": "Mr Flooring White" },
+                { "slug": "mrflooring-light-brown", "color":  "rgb(235,177,147)", "name": "Mr Flooring Light Brown" },
+                { "slug": "mrflooring-brown", "color":  "rgb(220,117,64)", "name": "Mr Flooring Brown" },
+                { "slug": "mrflooring-light-gray", "color":  "rgb(170,168,174)", "name": "Mr Flooring Light Gray" },
+                { "slug": "mrflooring-gray", "color":  "rgb(59,59,67)", "name": "Mr Flooring Gray" },
+                { "slug": "mrflooring-black", "color":  "rgb(40,39,45)", "name": "Mr Flooring Black" }
+            ],
+            "background": true,
+            "text": true,
+            "link": true,
+            "custom": true,
+            "duotone": [
+                { "slug": "mrflooring-timber", "colors": ["#dc7540", "#ebb193"], "name": "Mr Flooring Timber" },
+                { "slug": "mrflooring-laminate", "colors": ["#3b3b43", "#aaa8ae"], "name": "Mr Flooring Laminate" }
+            ],
+            "defaultGradients": false,
+            "gradients": [
+                { 
+                    "slug": "mr-flooring-liming-white", 
+                    "name": "Mr Flooring Liming White", 
+                    "gradient": "linear-gradient(#e2d8ca, #d2b7a2)"
+                },
+                { 
+                    "slug": "mr-flooring-cashew", 
+                    "name": "Mr Flooring Cashew", 
+                    "gradient": "linear-gradient(#c4a788, #a98c6d)"
+                },
+                { 
+                    "slug": "mr-flooring-bamyard-red", 
+                    "name": "Mr Flooring Bamyard Red", 
+                    "gradient": "linear-gradient(#cb5c1d, #a3330d)"
+                },
+                { 
+                    "slug": "mr-flooring-black-timber", 
+                    "name": "Mr Flooring Black Timber", 
+                    "gradient": "linear-gradient(#46392c, #18120b)"
+                }
+            ]
+        },
+        "blocks": {
+            "core/site-title": {
+                "color": {
+                    "defaultPalette": true,
+                    "palette": [
+                        { "slug": "mrflooring-primary", "color": "#dc7540", "name": "Mr Flooring Primary" },
+                        { "slug": "mrflooring-secondary", "color": "#3b3b43", "name": "Mr Flooring Secondary" }
+                    ],
+                    "link": true,
+                    "custom": true,
+                    "gradients": [],
+                    "customGradient": false
+                },
+                "typography": {
+                    "fontFamilies": [
+                        { 
+                            "fontFamily": "Bebas, sans-serif", 
+                            "slug": "mrflooring-bebas-neue",
+                            "name": "Bebas Neue"
+                        }
+                    ]
+                }
+            },
+            "core/cover": {
+                "color": {
+                    "duotone": [],
+                    "customDuotone": false
+                }
+            },
+            "core/preformatted": {
+                "typography": {
+                    "fontSizes": [],
+                    "customFontSize": false
+                }
+            }
+        },
+        "border": {
+            "color": true,
+            "radius": true,
+            "style": true,
+            "width": true
+        },
+        "typography": {
+            "fontFamilies": [
+                { 
+                    "fontFamily": "Bebas, sans-serif", 
+                    "slug": "mrflooring-bebas-neue",
+                    "name": "Bebas Neue"
+                },
+                {
+                    "fontFamily": "Quattrocento, sans-serif",
+                    "slug": "mr-flooring-quattrocento",
+                    "name": "Quattrocento"
+                }
+            ],
+            "fontSizes": [
+                { "slug": "small", "size": "0.75rem", "name": "Small" },
+                { "slug": "medium", "size": "1.25rem", "name": "Medium" },
+                { "slug": "large", "size": "2.25rem", "name": "Large" },
+                { "slug": "x-large", "size": "3rem", "name": "Extra Large" },
+                { "slug": "gigantic", "size": "3.75rem", "name": "Gigantic" }
+            ],
+            "lineHeight": true,
+            "dropCap": true,
+            "fontWeight": true,
+            "fontStyle": true,
+            "textTransform": true,
+            "letterSpacing": true,
+            "textDecoration": true
+        },
+        "layout": {
+            "contentSize": "800px",
+            "wideSize": "1100px"
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "units": [
+                "px", "rem", "vh", "vw", "%"
+            ],
+            "blockGap": true
+        }
+    },
+    "styles": {
+        "color":{
+            "text": "var(--wp--preset--color--mrflooring-gray)",
+            "background": "var(--wp--preset--color--mrflooring-white)"
+        },
+        "elements": {
+            "link": {
+                "color": {
+                    "text": "var(--wp--preset--color--mrflooring-primary)"
+                }
+            }
+        },
+        "blocks": {
+            "core/button": {
+                "color": {
+                    "background": "var(--wp--preset--color--mrflooring-brown)"
+                }
+            },
+            "core/pullquote": {
+                "border": {
+                    "width": "2px",
+                    "radius": "10px",
+                    "style": "solid",
+                    "color": "var(--wp--preset--color--mrflooring-primary)"
+                }
+            },
+            "core/site-title": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--mrflooring-bebas-neue)"
+                }
+            }
+        },
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--mr-flooring-quattrocento)",
+            "fontSize": "16px",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": "inherit",
+            "textDecoration": "none",
+            "textTransform": "none"
+        },
+        "spacing": {
+            "margin": {
+                "top": "0px",
+                "bottom": "0px",
+                "left": "0px",
+                "right": "0px"
+            },
+            "padding": {
+                "top": "0px",
+                "bottom": "0px",
+                "left": "0px",
+                "right": "0px"
+            },
+            "blockGap": "2rem"
+        }
+    }
+}
